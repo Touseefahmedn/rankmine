@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="RankMine Favic.png" alt="RankMine Logo" width="120">
+  <img src="logo.png" alt="RankMine Logo" width="120">
 </p>
 
 <div align="center" style="margin-bottom:12px">
