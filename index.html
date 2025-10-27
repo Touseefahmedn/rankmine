@@ -6,20 +6,21 @@
   <title>RankMine | Tools & Live App</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="theme-color" content="#0f4c75" />
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <div class="logo">
-        <img src="logo.png" alt="RankMine Logo" />
-      </div>
-      <div class="titles">
-        <h1>RankMine</h1>
-        <p>Your Creative Tools & Islamic Hub</p>
-      </div>
-    </header>
 
-    <main class="main">
+  <!-- Add these -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('✅ Service Worker registered'))
+          .catch(err => console.error('Service Worker registration failed:', err));
+      });
+    }
+  </script>
+</head>
+
+  <main class="main">
       <div class="grid">
         <a href="pages/ai-tools.html" class="btn"><div class="emoji">🤖</div><div class="title">AI Tools Hub</div></a>
         <a href="pages/store.html" class="btn"><div class="emoji">🛍️</div><div class="title">Digital Store</div></a>
