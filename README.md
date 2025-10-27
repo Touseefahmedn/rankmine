@@ -26,25 +26,24 @@
 | 🌐 **Social Links** | All RankMine social media in one place |
 
 ---
+Then open index.html in your browser.
+📲 Progressive Web App (PWA)
+Works seamlessly on Android, iPhone, and Desktop
+Click 📲 Install App in menu to add to your home screen
+
+## ✨ Highlights
+Clean GitHub rendering (centered + emoji visible)
+Minimal, modern & elegant style
+SEO friendly structure
+License placed professionally at the end
+---
+## 🧾 License
+This project is licensed under the MIT License
+---
+<p align="center"> Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a> </p> ```
 
 ## 🧭 Quick Deploy
 
 ```bash
 git clone https://github.com/Touseefahmedn/rankmine.git
 cd rankmine
-
-Then open index.html in your browser.
-📲 Progressive Web App (PWA)
-Works seamlessly on Android, iPhone, and Desktop
-Click 📲 Install App in menu to add to your home screen
-
-**## ✨ Highlights**
-Clean GitHub rendering (centered + emoji visible)
-Minimal, modern & elegant style
-SEO friendly structure
-License placed professionally at the end
----
-**## 🧾 License**
-This project is licensed under the MIT License
----
-<p align="center"> Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a> </p> ```
