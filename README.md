@@ -2,36 +2,42 @@
   <img src="logo.png" alt="RankMine Logo" width="120">
 </p>
 
-<div align="center" style="margin-bottom:12px">
-  <h1 style="margin:6px 0 0;padding:10px 16px;border-radius:12px;display:inline-block;
-             background:linear-gradient(90deg,#0f4c75 0%, #2b6fff 50%, #00c6ff 100%);
-             color:#fff;font-weight:700;">
-    🌟 RankMine
-  </h1>
-  <p style="margin:6px 0 0;color:#334155;">Quick access to your favourite RankMine tools & sites — all in one place 🚀</p>
-</div>
+<h1 align="center" style="color:#0f4c75;">🌟 RankMine</h1>
+
+<p align="center">
+  Modern web app for creative tools, Islamic content & productivity — all in one place 🚀  
+</p>
 
 ---
 
-## ✨ Features
+## ⚡ Core Features
 
-- **Daily Photo Prompts**: [Link](https://rankmine.blogspot.com/p/daily-photo-prompts.html)  
-- **AI Tools**: [Link](https://rankmine.blogspot.com/p/tools.html)  
-- **Quran**: [Link](https://islamicquizgamezz.blogspot.com/p/quran.html)  
-- **Islam & Quiz**: [Link](https://islamicquizgamezz.blogspot.com/p/game.html)  
-- **PDF Editor**: [Link](https://onlinepdfeditorhub.blogspot.com/)  
-- **YouTube & Social Media**:
-  - [YouTube](https://www.youtube.com/@touseefahmedn)  
-  - [Facebook](https://www.facebook.com/touseefahmed.n)  
-  - [Instagram](https://www.instagram.com/touseefahmed.n)  
-  - [X (Twitter)](https://x.com/TouseefAhmed_n)  
-  - [GitHub](https://github.com/Touseefahmedn)
+| Category | Description |
+|-----------|--------------|
+| 🎯 **Spin Wheel** | Mini game for fun and engagement |
+| 🎁 **Giveaway Picker** | Random comment or name picker |
+| 🤝 **Collab Finder** | Connect creators for safe collaborations |
+| 🖼️ **Daily Prompts** | Daily AI / creative inspiration ideas |
+| 💡 **AI Tools Hub** | Smart tools & utilities for daily use |
+| 🏪 **Digital Store** | Sell or share your products easily |
+| 📖 **Quran & Quiz** | Islamic learning & interactive quizzes |
+| 🌙 **Islamic Hub** | Faith-based articles and content |
+| 🌐 **Social Links** | All RankMine social media in one place |
 
 ---
 
-## ⚙️ How to Deploy
+## 🧭 Quick Deploy
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Touseefahmedn/rankmine.git
-   cd rankmine
+```bash
+git clone https://github.com/Touseefahmedn/rankmine.git
+cd rankmine
+
+---
+
+### 🔥 Benefits of this short version:
+- Professional but lightweight  
+- SEO optimized (keywords like “Islamic content”, “AI tools”, “creative hub”)  
+- Looks premium in GitHub preview  
+- Easy to update later  
+
+---
