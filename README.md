@@ -33,18 +33,4 @@
 git clone https://github.com/Touseefahmedn/rankmine.git
 cd rankmine
 
-Then open index.html in browser.
-
-📲 Progressive Web App (PWA)
-Works seamlessly on Android, iPhone, and Desktop.
-Click 📲 Install App in the menu to add to your home screen.
-
-## 🧾 License
-This project is licensed under the **MIT License**.
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a>
-</p>
-
+<p align="center"> Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a> </p> ```
