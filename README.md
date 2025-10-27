@@ -33,8 +33,8 @@
 
 1. Clone the repository.  
    ```bash
-   git clone https://github.com/Touseefahmedn/rankmine-superapp.git
-   cd rankmine-superapp
+   git clone https://github.com/Touseefahmedn/rankmine.git
+   cd rankmine
 
    ## 🧾 LICENSE
 This project is licensed under the **MIT License**.
