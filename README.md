@@ -36,11 +36,6 @@ cd rankmine
 Works seamlessly on Android, iPhone, and Desktop
 Click 📲 Install App in menu to add to your home screen
 
-🧾 License
-This project is licensed under the MIT License.
-Made with ❤️ by Touseef Ahmed
-
-
 ---
 
 ### ✨ Highlights:
@@ -50,3 +45,14 @@ Made with ❤️ by Touseef Ahmed
 - License last me properly placed (MIT format).  
 
 ---
+---
+
+## 🧾 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a>
+</p>
