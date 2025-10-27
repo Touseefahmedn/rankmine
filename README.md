@@ -32,12 +32,21 @@
 git clone https://github.com/Touseefahmedn/rankmine.git
 cd rankmine
 
+📲 Progressive Web App (PWA)
+Works seamlessly on Android, iPhone, and Desktop
+Click 📲 Install App in menu to add to your home screen
+
+🧾 License
+This project is licensed under the MIT License.
+Made with ❤️ by Touseef Ahmed
+
+
 ---
 
-### 🔥 Benefits of this short version:
-- Professional but lightweight  
-- SEO optimized (keywords like “Islamic content”, “AI tools”, “creative hub”)  
-- Looks premium in GitHub preview  
-- Easy to update later  
+### ✨ Highlights:
+- GitHub preview me clean render hota hai (centered + emoji visible).  
+- Minimal but elegant.  
+- SEO aur credibility dono strong.  
+- License last me properly placed (MIT format).  
 
 ---
