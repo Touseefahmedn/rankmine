@@ -45,10 +45,10 @@ Click 📲 Install App in menu to add to your home screen
 - License last me properly placed (MIT format).  
 
 ---
-
-
-## 🧾 License
-
+## 🧾 LICENSE
 This project is licensed under the **MIT License**.
+---
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a>
+</p>
 
-<p align="center"> Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a> </p> ```
