@@ -2,7 +2,7 @@
   <img src="logo.png" alt="RankMine Logo" width="120">
 </p>
 
-<h1 align="center" style="color:#0f4c75;">🌟 RankMine</h1>
+<h1 align="center">🌟 RankMine</h1>
 
 <p align="center">
   Modern web app for creative tools, Islamic content & productivity — all in one place 🚀  
@@ -20,6 +20,7 @@
 | 🖼️ **Daily Prompts** | Daily AI / creative inspiration ideas |
 | 💡 **AI Tools Hub** | Smart tools & utilities for daily use |
 | 🏪 **Digital Store** | Sell or share your products easily |
+| 📄 **PDF Editor** | Edit and convert PDFs online |
 | 📖 **Quran & Quiz** | Islamic learning & interactive quizzes |
 | 🌙 **Islamic Hub** | Faith-based articles and content |
 | 🌐 **Social Links** | All RankMine social media in one place |
@@ -32,22 +33,13 @@
 git clone https://github.com/Touseefahmedn/rankmine.git
 cd rankmine
 
+Then open index.html in browser.
+
 📲 Progressive Web App (PWA)
-Works seamlessly on Android, iPhone, and Desktop
-Click 📲 Install App in menu to add to your home screen
+Works seamlessly on Android, iPhone, and Desktop.
+Click 📲 Install App in the menu to add to your home screen.
 
----
+🧾 License
+This project is licensed under the MIT License.
 
-### ✨ Highlights:
-- GitHub preview me clean render hota hai (centered + emoji visible).  
-- Minimal but elegant.  
-- SEO aur credibility dono strong.  
-- License last me properly placed (MIT format).  
----
-## 🧾 LICENSE
-This project is licensed under the **MIT License**.
----
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a>
-</p>
-
+<p align="center"> Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a> </p> ```
