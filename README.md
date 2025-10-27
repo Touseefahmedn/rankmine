@@ -31,15 +31,7 @@
 
 ## ⚙️ How to Deploy
 
-1. Clone the repository.  
+1. Clone this repository:
    ```bash
    git clone https://github.com/Touseefahmedn/rankmine.git
    cd rankmine
-
-   ## 🧾 LICENSE
-This project is licensed under the **MIT License**.
-
----
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/Touseefahmedn">Touseef Ahmed</a>
-</p>
