@@ -26,7 +26,7 @@
 | 🌐 **Social Links** | All RankMine social media in one place |
 
 ---
-Then open index.html in your browser.
+## Then open index.html in your browser.
 📲 Progressive Web App (PWA)
 Works seamlessly on Android, iPhone, and Desktop
 Click 📲 Install App in menu to add to your home screen    
