@@ -1,113 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>RankMine</title>
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="style.css">
-<meta name="theme-color" content="#0f4c75">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RankMine – AI Tools & Store Hub</title>
+  <meta name="description" content="Your ultimate AI tools, digital store, and creative hub – RankMine.">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f4c75">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Register service worker for PWA + Push
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('✅ Service Worker Registered'))
+        .catch(err => console.error('SW Error:', err));
+    }
+  </script>
 </head>
 <body>
-<div class="app" role="application">
-  <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="RankMine logo">
-    </div>
-    <div class="titles">
-      <h1>RankMine</h1>
-      <p>Quick access to your favourite RankMine tools & sites</p>
-    </div>
-  </header>
+  <div class="app">
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="RankMine Logo">
+      </div>
+      <div class="titles">
+        <h1>RankMine</h1>
+        <p>Your Ultimate AI & Tools Hub</p>
+      </div>
+    </header>
 
-  <main class="main">
-    <div class="grid">
-      <a class="btn" href="https://rankmine.blogspot.com/p/daily-photo-prompts.html" target="_blank" rel="noopener">
-        <div class="emoji">🖼️</div>
-        <div class="title">Daily Prompts</div>
-      </a>
-      <a class="btn" href="https://rankmine.blogspot.com/p/tools.html" target="_blank" rel="noopener">
-        <div class="emoji">⚙️</div>
-        <div class="title">AI Tools</div>
-      </a>
-      <a class="btn" href="https://islamicquizgamezz.blogspot.com/p/quran.html" target="_blank" rel="noopener">
-        <div class="emoji">📖</div>
-        <div class="title">Quran</div>
-      </a>
-      <a class="btn" href="https://islamicquizgamezz.blogspot.com/p/game.html" target="_blank" rel="noopener">
-        <div class="emoji">🧠</div>
-        <div class="title">Islam & Quiz</div>
-      </a>
-      <a class="btn" href="https://onlinepdfeditorhub.blogspot.com/" target="_blank" rel="noopener">
-        <div class="emoji">📄</div>
-        <div class="title">PDF Editor</div>
-      </a>
-      <a class="btn" id="socialBtn" href="https://www.facebook.com/FbForyou" target="_blank" rel="noopener">
-        <div class="emoji">🌐</div>
-        <div class="title">Social</div>
-      </a>
-    </div>
+    <main class="main">
+      <div class="grid">
+        <a href="pages/ai-tools.html" class="btn">
+          <div class="emoji">🤖</div>
+          <div class="title">AI Tools Hub</div>
+        </a>
+        <a href="pages/store.html" class="btn">
+          <div class="emoji">🛍️</div>
+          <div class="title">Digital Store</div>
+        </a>
+        <a href="pages/spinwheel.html" class="btn">
+          <div class="emoji">🎯</div>
+          <div class="title">Spin Wheel Game</div>
+        </a>
+        <a href="pages/giveaway.html" class="btn">
+          <div class="emoji">🎁</div>
+          <div class="title">Giveaway Picker</div>
+        </a>
+        <a href="pages/collab-finder.html" class="btn">
+          <div class="emoji">🤝</div>
+          <div class="title">Collab Finder</div>
+        </a>
+      </div>
 
-    <div class="actions">
-      <a class="chip" id="installBtn">Install RankMine App</a>
-      <a class="chip" href="https://rankmine.blogspot.com" target="_blank" rel="noopener">Visit RankMine</a>
-      <a class="chip" href="https://www.youtube.com/@touseefahmedn" target="_blank" rel="noopener">YouTube</a>
-    </div>
-  </main>
+      <div class="grid" style="margin-top:20px;">
+        <a href="https://islamicquizgamezz.blogspot.com/p/quran.html" class="btn">
+          <div class="emoji">📖</div>
+          <div class="title">Quran</div>
+        </a>
+        <a href="https://islamicquizgamezz.blogspot.com/p/game.html" class="btn">
+          <div class="emoji">🕌</div>
+          <div class="title">Islam & Quiz</div>
+        </a>
+      </div>
+    </main>
 
-  <footer>
-    <div>RankMine • quick access</div>
-    <div class="socials">
-      <a class="chip" href="https://www.facebook.com/touseefahmed.n" target="_blank" rel="noopener">Facebook</a>
-      <a class="chip" href="https://www.instagram.com/touseefahmed.n" target="_blank" rel="noopener">Instagram</a>
-      <a class="chip" href="https://x.com/TouseefAhmed_n" target="_blank" rel="noopener">X</a>
-    </div>
-  </footer>
-</div>
+    <footer>
+      <div style="text-align:center; font-size:14px;">
+        © 2025 <b>RankMine</b> — Created by <b>Touseef Ahmed</b>
+      </div>
+      <div style="text-align:center; margin-top:8px;">
+        <a href="https://www.youtube.com/@touseefahmedn" target="_blank">YouTube</a> |
+        <a href="https://www.facebook.com/touseefahmed.n" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/touseefahmed.n" target="_blank">Instagram</a> |
+        <a href="https://x.com/TouseefAhmed_n" target="_blank">X</a> |
+        <a href="https://github.com/Touseefahmedn" target="_blank">GitHub</a>
+      </div>
+    </footer>
+  </div>
 
-<script>
-document.getElementById('socialBtn').addEventListener('click', function(e){
-  e.preventDefault();
-  const menu = [
-    {t:'YouTube',u:'https://www.youtube.com/@touseefahmedn'},
-    {t:'Facebook',u:'https://www.facebook.com/touseefahmed.n'},
-    {t:'Instagram',u:'https://www.instagram.com/touseefahmed.n'},
-    {t:'X / Twitter',u:'https://x.com/TouseefAhmed_n'},
-    {t:'GitHub',u:'https://github.com/Touseefahmedn'}
-  ];
-  const list = menu.map(m=>`<a class="chip" href="${m.u}" target="_blank" rel="noopener" style="margin-right:6px">${m.t}</a>`).join('');
-  const w = window.open('', '_blank', 'noopener');
-  w.document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
-  w.document.write('<body style="font-family:Inter,Arial;padding:20px;background:#f7fafc"><h3>Social Links</h3>'+list+'</body>');
-  w.document.close();
-});
-
-let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
-installBtn.style.cursor = 'pointer';
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  installBtn.textContent = 'Install RankMine App';
-});
-installBtn.addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    const choice = await deferredPrompt.userChoice;
-    if (choice.outcome === 'accepted') {
-      installBtn.textContent = 'Installed ✓';
-    } else {
-      installBtn.textContent = 'Install RankMine App';
+  <script>
+    // Push Notification Request
+    function askNotificationPermission() {
+      if (Notification.permission === "granted") return;
+      Notification.requestPermission().then(permission => {
+        if (permission === "granted") {
+          new Notification("🎉 Notifications Enabled!", {
+            body: "You will now receive RankMine updates.",
+            icon: "icons/icon-192.png"
+          });
+        }
+      });
     }
-    deferredPrompt = null;
-  } else {
-    alert('To install: open browser menu → Add to Home screen (Android) or Share → Add to Home Screen (iOS).');
-  }
-});
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js').catch(()=>{});
-}
-</script>
+    setTimeout(askNotificationPermission, 3000);
+  </script>
 </body>
 </html>
