@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RankMine | PDF Editor</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="theme-color" content="#0f4c75">
+  <style>
+    .pdf-tool {
+      background:#fff;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.05);
+      text-align:center;
+    }
+    .pdf-tool input[type="file"] {
+      display:block;
+      margin:15px auto;
+      border:1px solid #ccc;
+      padding:8px;
+      border-radius:8px;
+    }
+    .pdf-actions button {
+      background:#0f4c75;
+      color:#fff;
+      border:none;
+      border-radius:8px;
+      padding:10px 20px;
+      margin:10px;
+      cursor:pointer;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .pdf-actions button:hover {
+      background:#2b6fff;
+      transform:translateY(-2px);
+    }
+    iframe {
+      width:100%;
+      height:600px;
+      border-radius:10px;
+      border:1px solid rgba(0,0,0,0.1);
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">
+        <img src="../logo.png" alt="RankMine Logo">
+      </div>
+      <div class="titles">
+        <h1>PDF Editor</h1>
+        <p>Edit, view, and convert PDF files online</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="pdf-tool">
+        <h2>Upload your PDF file</h2>
+        <input type="file" id="pdfFile" accept="application/pdf">
+        <div class="pdf-actions">
+          <button onclick="viewPDF()">📄 View</button>
+          <button onclick="downloadPDF()">⬇️ Download</button>
+          <button onclick="resetTool()">🗑️ Clear</button>
+        </div>
+        <iframe id="pdfViewer" style="display:none;"></iframe>
+      </div>
+
+      <div style="text-align:center;margin-top:20px;">
+        <a href="../index.html" class="chip">🏠 Back to Home</a>
+      </div>
+    </main>
+
+    <footer>
+      <div>© 2025 RankMine — Created by <b>Touseef Ahmed</b></div>
+    </footer>
+  </div>
+
+  <script>
+    function viewPDF() {
+      const fileInput = document.getElementById('pdfFile');
+      const pdfViewer = document.getElementById('pdfViewer');
+      if (!fileInput.files[0]) {
+        alert("Please select a PDF file first!");
+        return;
+      }
+      const fileURL = URL.createObjectURL(fileInput.files[0]);
+      pdfViewer.src = fileURL;
+      pdfViewer.style.display = 'block';
+    }
+
+    function downloadPDF() {
+      const fileInput = document.getElementById('pdfFile');
+      if (!fileInput.files[0]) {
+        alert("Please select a PDF file first!");
+        return;
+      }
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(fileInput.files[0]);
+      link.download = fileInput.files[0].name;
+      link.click();
+    }
+
+    function resetTool() {
+      document.getElementById('pdfFile').value = "";
+      document.getElementById('pdfViewer').style.display = 'none';
+      document.getElementById('pdfViewer').src = "";
+    }
+  </script>
+</body>
+</html>
