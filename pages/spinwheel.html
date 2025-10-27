@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spin Wheel | RankMine</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo"><img src="../logo.png" alt="RankMine" /></div>
+      <div class="titles">
+        <h1>Spin Wheel</h1>
+        <p>Try your luck and win cool rewards 🎯</p>
+      </div>
+    </header>
+
+    <main class="main" style="text-align:center;">
+      <canvas id="wheel" width="320" height="320" style="border-radius:50%;"></canvas>
+      <button id="spin" class="chip" style="margin-top:15px;">Spin Now</button>
+      <div id="result" style="margin-top:15px;font-weight:600;"></div>
+    </main>
+
+    <footer>© 2025 RankMine</footer>
+  </div>
+
+  <script>
+    const wheel = document.getElementById("wheel");
+    const ctx = wheel.getContext("2d");
+    const sectors = ["🎁 10% Off", "😎 Free PDF", "🎨 Bonus Icon", "💔 Try Again", "💥 20% Off", "⭐ Lucky Draw"];
+    const seg = (2 * Math.PI) / sectors.length;
+
+    function drawWheel() {
+      for (let i = 0; i < sectors.length; i++) {
+        ctx.beginPath();
+        ctx.moveTo(160, 160);
+        ctx.arc(160, 160, 150, i * seg, (i + 1) * seg);
+        ctx.fillStyle = i % 2 ? "#f0f6ff" : "#ffffff";
+        ctx.fill();
+        ctx.strokeStyle = "#0f4c75";
+        ctx.stroke();
+        ctx.save();
+        ctx.translate(160, 160);
+        ctx.rotate((i + 0.5) * seg);
+        ctx.textAlign = "right";
+        ctx.fillStyle = "#0f4c75";
+        ctx.font = "14px sans-serif";
+        ctx.fillText(sectors[i], 130, 5);
+        ctx.restore();
+      }
+    }
+    drawWheel();
+
+    document.getElementById("spin").onclick = () => {
+      const angle = 360 * 10 + Math.random() * 360;
+      wheel.style.transition = "4s ease-out";
+      wheel.style.transform = `rotate(${angle}deg)`;
+      setTimeout(() => {
+        const index = Math.floor(((angle % 360) / 360) * sectors.length);
+        document.getElementById("result").textContent = "You got: " + sectors[(sectors.length - index) % sectors.length];
+        wheel.style.transition = "none";
+        wheel.style.transform = "none";
+      }, 4000);
+    };
+  </script>
+</body>
+</html>
