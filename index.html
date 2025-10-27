@@ -32,14 +32,16 @@
         <a href="pages/social.html" class="btn"><div class="emoji">🌐</div><div class="title">Social Links</div></a>
       </div>
 
-      <div style="text-align:center; margin-top:30px;">
-        <button onclick="showInstallTip()" class="chip" style="background:#0f4c75;color:#fff;">
-          📲 Install App
-        </button>
-        <p id="install-tip" style="margin-top:12px;color:#0f4c75;font-weight:600;display:none;">
-          To install: open browser menu → <b>Add to Home screen</b> (Android) or <b>Share → Add to Home Screen</b> (iOS).
-        </p>
-      </div>
+     <div style="text-align:center; margin-top:30px;">
+  <button id="install-btn" onclick="installApp()" class="chip" 
+          style="background:#0f4c75;color:#fff;display:none;">
+    📲 Install App
+  </button>
+  <p id="install-tip" style="margin-top:12px;color:#0f4c75;font-weight:600;display:none;">
+    To install: open browser menu → <b>Add to Home screen</b> (Android) or 
+    <b>Share → Add to Home Screen</b> (iOS).
+  </p>
+</div>
     </main>
 
     <footer>
@@ -48,9 +50,30 @@
   </div>
 
   <script>
-    function showInstallTip() {
+  let deferredPrompt;
+
+  // Detect install prompt event
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('install-btn').style.display = 'inline-block';
+  });
+
+  // On click — trigger real PWA install
+  async function installApp() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const choice = await deferredPrompt.userChoice;
+      if (choice.outcome === 'accepted') {
+        document.getElementById('install-tip').textContent = '✅ App installed successfully!';
+      } else {
+        document.getElementById('install-tip').textContent = 'Installation dismissed.';
+      }
+      deferredPrompt = null;
+    } else {
       document.getElementById('install-tip').style.display = 'block';
     }
-  </script>
+  }
+</script>
 </body>
 </html>
