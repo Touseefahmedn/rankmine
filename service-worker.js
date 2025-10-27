@@ -1,17 +1,17 @@
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open('rankmine-shell-v1').then(function(cache) {
-      return cache.addAll(['index.html','manifest.json','style.css','icons/icon-192.png','icons/icon-512.png']);
-    })
-  );
-  self.skipWaiting();
+self.addEventListener("install", e => {
+  e.waitUntil(caches.open("rankmine-v1").then(cache => {
+    return cache.addAll(["/", "/index.html", "/style.css"]);
+  }));
+});
+self.addEventListener("fetch", e => {
+  e.respondWith(caches.match(e.request).then(res => res || fetch(e.request)));
 });
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
-  );
+// Firebase push notification placeholder
+self.addEventListener('push', e=>{
+  const data = e.data.json();
+  self.registration.showNotification(data.title, {
+    body: data.body,
+    icon: '/icons/icon-192.png'
+  });
 });
