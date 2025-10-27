@@ -6,7 +6,7 @@
   <h1 style="margin:6px 0 0;padding:10px 16px;border-radius:12px;display:inline-block;
              background:linear-gradient(90deg,#0f4c75 0%, #2b6fff 50%, #00c6ff 100%);
              color:#fff;font-weight:700;">
-    🌟 RankMine Super App
+    🌟 RankMine
   </h1>
   <p style="margin:6px 0 0;color:#334155;">Quick access to your favourite RankMine tools & sites — all in one place 🚀</p>
 </div>
